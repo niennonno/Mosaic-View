@@ -10,9 +10,8 @@ import UIKit
 import TRMosaicLayout
 import Photos
 import AVKit
-import MobileCoreServices
 
-class ViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UICollectionViewController {
     
  
     var imageArray = [UIImage]()
@@ -24,6 +23,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
         
         let imgManager = PHImageManager.default()
+        
+//        show()
         
         let requestOptions = PHImageRequestOptions()
         requestOptions.isSynchronous = false
@@ -42,40 +43,21 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             
             for i in 0..<fetchResult.count {
           
-                imgManager.requestImage(for: fetchResult.object(at: i) , targetSize: CGSize(width: 200, height: 200), contentMode: .aspectFill, options: requestOptions, resultHandler: { (anImage, error) in
+                imgManager.requestImage(for: fetchResult.object(at: i) , targetSize: CGSize(width: 1200, height: 200), contentMode: .aspectFill, options: requestOptions, resultHandler: { (anImage, error) in
                     self.imageArray.append(anImage!)
                 })
 
             }
-            
-            
         } else {
             self.collectionView?.reloadData()
         }
-        
-//        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.savedPhotosAlbum){
-//
-//            let imagePicker = UIImagePickerController()
-//            
-//            imagePicker.delegate = self
-//            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-//            imagePicker.mediaTypes = [kUTTypeImage as String]
-//            imagePicker.mediaTypes = [kUTTypeMovie as String]
-//            imagePicker.mediaTypes = [kUTTypeAudio as String]
-//            imagePicker.allowsEditing = false
-//            
-//            self.present(imagePicker, animated: true, completion: nil)
-//            
-////            newMedia = false
-//        }
-        
-        
-       
-        
-        
     }
     
     
+    func show() {
+        let aVC = ImagingViewController()
+        self.navigationController?.pushViewController(aVC, animated: true)
+    }
     
     
     // MARK: - CollectionView Data Source
@@ -113,6 +95,13 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         
         return aCell
         
+    }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let aVC = laLaViewController()
+        aVC.anImage = imageArray[indexPath.row]
+        self.navigationController?.pushViewController(aVC, animated: true)
     }
 }
 

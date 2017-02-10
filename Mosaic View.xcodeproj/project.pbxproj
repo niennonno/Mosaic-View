@@ -21,6 +21,8 @@
 		D36E3CE21E4B374D0054ECB3 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D36E3CDD1E4B374D0054ECB3 /* download.jpeg */; };
 		D36E3CE31E4B374D0054ECB3 /* too-cute-doggone-it-video-playlist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D36E3CDE1E4B374D0054ECB3 /* too-cute-doggone-it-video-playlist.jpg */; };
 		D36E3CE51E4B37CC0054ECB3 /* Logo Feel-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D36E3CE41E4B37CC0054ECB3 /* Logo Feel-02.png */; };
+		D3879CE11E4D9DFF005FBEB6 /* ImagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3879CE01E4D9DFF005FBEB6 /* ImagingViewController.swift */; };
+		D3879CE41E4DA0C8005FBEB6 /* laLaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3879CE31E4DA0C8005FBEB6 /* laLaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		D36E3CDD1E4B374D0054ECB3 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		D36E3CDE1E4B374D0054ECB3 /* too-cute-doggone-it-video-playlist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "too-cute-doggone-it-video-playlist.jpg"; sourceTree = "<group>"; };
 		D36E3CE41E4B37CC0054ECB3 /* Logo Feel-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Feel-02.png"; sourceTree = "<group>"; };
+		D3879CE01E4D9DFF005FBEB6 /* ImagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagingViewController.swift; sourceTree = "<group>"; };
+		D3879CE31E4DA0C8005FBEB6 /* laLaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = laLaViewController.swift; sourceTree = "<group>"; };
+		D3879CE51E4DBF52005FBEB6 /* van_damme_clip_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = van_damme_clip_1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,8 @@
 				D36E3CD51E4B36960054ECB3 /* Images */,
 				D31398FC1E4B332400D1C67F /* AppDelegate.swift */,
 				D31398FE1E4B332400D1C67F /* ViewController.swift */,
+				D3879CE01E4D9DFF005FBEB6 /* ImagingViewController.swift */,
+				D3879CE31E4DA0C8005FBEB6 /* laLaViewController.swift */,
 				D31399001E4B332400D1C67F /* Main.storyboard */,
 				D31399031E4B332400D1C67F /* Assets.xcassets */,
 				D31399051E4B332400D1C67F /* LaunchScreen.storyboard */,
@@ -116,6 +123,7 @@
 				D36E3CE41E4B37CC0054ECB3 /* Logo Feel-02.png */,
 				D36E3CDE1E4B374D0054ECB3 /* too-cute-doggone-it-video-playlist.jpg */,
 				D36E3CD81E4B36C80054ECB3 /* frames-39.png */,
+				D3879CE51E4DBF52005FBEB6 /* van_damme_clip_1.mp4 */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -251,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3879CE41E4DA0C8005FBEB6 /* laLaViewController.swift in Sources */,
+				D3879CE11E4D9DFF005FBEB6 /* ImagingViewController.swift in Sources */,
 				D31398FF1E4B332400D1C67F /* ViewController.swift in Sources */,
 				D31398FD1E4B332400D1C67F /* AppDelegate.swift in Sources */,
 			);
