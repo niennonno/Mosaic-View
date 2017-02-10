@@ -23,6 +23,7 @@
 		D36E3CE51E4B37CC0054ECB3 /* Logo Feel-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D36E3CE41E4B37CC0054ECB3 /* Logo Feel-02.png */; };
 		D3879CE11E4D9DFF005FBEB6 /* ImagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3879CE01E4D9DFF005FBEB6 /* ImagingViewController.swift */; };
 		D3879CE41E4DA0C8005FBEB6 /* laLaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3879CE31E4DA0C8005FBEB6 /* laLaViewController.swift */; };
+		D3879CE61E4DD615005FBEB6 /* van_damme_clip_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D3879CE51E4DBF52005FBEB6 /* van_damme_clip_1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3879CE61E4DD615005FBEB6 /* van_damme_clip_1.mp4 in Resources */,
 				D31399071E4B332400D1C67F /* LaunchScreen.storyboard in Resources */,
 				D36E3CE11E4B374D0054ECB3 /* c9e391f96cd27172a71caa7bd694b47d_square-clip-art-clipart-square_800-800.png in Resources */,
 				D31399041E4B332400D1C67F /* Assets.xcassets in Resources */,
